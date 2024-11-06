@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libneoncore.a CMakeFiles/neoncore.dir/src/neoncore.cpp.o CMakeFiles/neoncore.dir/src/vector_ops.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libneoncore.a

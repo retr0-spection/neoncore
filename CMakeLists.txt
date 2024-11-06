@@ -1,0 +1,46 @@
+cmake_minimum_required(VERSION 3.10)
+
+# Set the project name and version
+project(NeonCore VERSION 1.0 LANGUAGES CXX)
+
+# Enable C++17 (or higher)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+
+# Set the build type
+set(CMAKE_BUILD_TYPE Release)
+
+# Add the include directory where your headers are located
+include_directories(${PROJECT_SOURCE_DIR}/include)  # Include the include directory
+
+# Add the main NeonCore library (neoncore)
+add_library(neoncore
+    src/neoncore.cpp
+    src/vector_ops.cpp
+    # Include additional source files here as your library grows
+)
+
+# -----------------------------
+# Find GoogleTest (using Homebrew)
+# -----------------------------
+find_package(GTest REQUIRED)
+
+# -----------------------------
+# Create the test executable
+# -----------------------------
+add_executable(test_neoncore
+    tests/test_neoncore.cpp  # Ensure this file exists or adjust the path accordingly
+)
+
+# Link GoogleTest and NeonCore library to the test executable
+target_link_libraries(test_neoncore
+    neoncore      # Link the NeonCore library
+    GTest::GTest  # Link the GoogleTest library
+    GTest::Main   # Link the GoogleTest main function
+)
+
+# -----------------------------
+# Enable testing and run tests
+# -----------------------------
+enable_testing()
+add_test(NAME NeonCoreTest COMMAND test_neoncore)
