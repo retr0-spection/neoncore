@@ -5,18 +5,13 @@
 ## Features
 
 - **Optimized for ARM**: Uses ARM NEON SIMD instructions for improved performance on ARM-based processors.
-- **Cross-Platform**: While designed for ARM, the library supports cross-compilation and can be tested on non-ARM platforms like x86_64 using GitHub Actions.
 - **Minimal Overhead**: A lightweight and efficient library with a focus on performance, using ARM-specific optimizations for vector operations.
-- **Cross-Compilation Support**: Easily cross-compile for ARM architecture even on x86_64 systems using a simple CMake toolchain.
+
 
 ## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Building and Testing](#building-and-testing)
-- [GitHub Actions CI](#github-actions-ci)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 
