@@ -1,0 +1,18 @@
+# Ignore build directories
+/build/
+
+# Ignore CMake files
+CMakeCache.txt
+CMakeFiles/
+Makefile
+CMakeScripts/
+Testing/
+install_manifest.txt
+
+# Ignore IDE specific files
+.vscode/
+.idea/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
