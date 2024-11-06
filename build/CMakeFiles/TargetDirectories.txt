@@ -1,5 +1,0 @@
-/Users/retr0/Coding/neoncore/build/CMakeFiles/neoncore.dir
-/Users/retr0/Coding/neoncore/build/CMakeFiles/test_neoncore.dir
-/Users/retr0/Coding/neoncore/build/CMakeFiles/test.dir
-/Users/retr0/Coding/neoncore/build/CMakeFiles/edit_cache.dir
-/Users/retr0/Coding/neoncore/build/CMakeFiles/rebuild_cache.dir
