@@ -45,7 +45,7 @@ To install **NeonCore**, simply clone the repository and build it using CMake. Y
   ```
 ## Usage
   ```cpp
-  #include "neoncore/neoncore.h"
+  #include "neoncore/vector_ops.h"
 
   int main() {
       float array1[] = {1.0f, 2.0f, 3.0f, 4.0f};
