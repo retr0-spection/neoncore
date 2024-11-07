@@ -62,3 +62,7 @@ To install **NeonCore**, simply clone the repository and build it using CMake. Y
       return 0;
   }
   ```
+## Compile
+    ```bash
+    g++ -o main_program -L path/to/build -lneoncore
+    ```
