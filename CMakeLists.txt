@@ -14,11 +14,17 @@ set(CMAKE_BUILD_TYPE Release)
 include_directories(${PROJECT_SOURCE_DIR}/include)  # Include the include directory
 
 # Add the main NeonCore library (neoncore)
-add_library(neoncore
-    src/neoncore.cpp
+add_library(neoncore SHARED
     src/vector_ops.cpp
     # Include additional source files here as your library grows
 )
+
+# Install library and headers
+install(TARGETS neoncore DESTINATION /usr/local/lib)
+install(DIRECTORY ${PROJECT_SOURCE_DIR}/include/ DESTINATION /usr/local/include)
+
+
+set(CMAKE_INSTALL_RPATH "/usr/local/lib")
 
 # -----------------------------
 # Find GoogleTest (using Homebrew)
@@ -31,6 +37,8 @@ find_package(GTest REQUIRED)
 add_executable(test_neoncore
     tests/test_neoncore.cpp  # Ensure this file exists or adjust the path accordingly
 )
+
+
 
 # Link GoogleTest and NeonCore library to the test executable
 target_link_libraries(test_neoncore

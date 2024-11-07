@@ -21,7 +21,6 @@ To install **NeonCore**, simply clone the repository and build it using CMake. Y
 
 - **CMake** (for building the project)
 - **Google Test** (for running tests)
-- **Cross-compilation tools** (for ARM target)
 
 ### Steps to Install:
 

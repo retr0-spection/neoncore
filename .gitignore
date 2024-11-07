@@ -16,3 +16,6 @@ install_manifest.txt
 # Ignore system files
 .DS_Store
 Thumbs.db
+
+# misc
+dev/

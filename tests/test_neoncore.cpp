@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "neoncore/neoncore.h"  // Include the main NeonCore header
+#include "neoncore/vector_ops.h"  // Include the main NeonCore header
 
 // Test for adding two float arrays
 TEST(NeonCoreTest, AddFloatArrays) {
