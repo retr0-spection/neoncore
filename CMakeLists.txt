@@ -20,11 +20,11 @@ add_library(neoncore SHARED
 )
 
 # Install library and headers
-install(TARGETS neoncore DESTINATION /usr/local/lib)
-install(DIRECTORY ${PROJECT_SOURCE_DIR}/include/ DESTINATION /usr/local/include)
+#install(TARGETS neoncore DESTINATION /usr/local/lib)
+#install(DIRECTORY ${PROJECT_SOURCE_DIR}/include/ DESTINATION /usr/local/include)
 
 
-set(CMAKE_INSTALL_RPATH "/usr/local/lib")
+#set(CMAKE_INSTALL_RPATH "/usr/local/lib")
 
 # -----------------------------
 # Find GoogleTest (using Homebrew)
