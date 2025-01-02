@@ -64,12 +64,11 @@ To install **NeonCore**, simply clone the repository and build it using CMake. Y
       for (int i = 0; i < 4; i++) {
           std::cout << result[i] << " ";
       }
-
       return 0;
   }
   ```
-### Compile
-    ```bash
+  ### Compile
+  ```bash
     g++ -o main_program -L path/to/build -lneoncore
     ```
 <!-- ROADMAP -->
