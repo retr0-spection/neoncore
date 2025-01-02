@@ -52,3 +52,16 @@ target_link_libraries(test_neoncore
 # -----------------------------
 enable_testing()
 add_test(NAME NeonCoreTest COMMAND test_neoncore)
+
+# -----------------------------
+# Add Benchmark Executable (New Addition)
+# -----------------------------
+# Add the benchmark executable for the vector_benchmark.cpp
+add_executable(vector_benchmark
+    benchmarks/vector_benchmark.cpp
+)
+
+# Link NeonCore to the benchmark executable
+target_link_libraries(vector_benchmark
+    neoncore  # Link the NeonCore library
+)

@@ -2,6 +2,11 @@
 
 **NeonCore** is a highly optimized C++ math library designed to leverage **ARM's NEON** SIMD (Single Instruction, Multiple Data) instructions for high-performance computations. This library is built for developers who want to harness the power of ARM processors, particularly for tasks such as linear algebra, vector operations, and other computationally intensive math operations.
 
+## Performance
+
+![screenshot](benchmarks/benchmark_comparison.png)
+
+
 ## Features
 
 - **Optimized for ARM**: Uses ARM NEON SIMD instructions for improved performance on ARM-based processors.
