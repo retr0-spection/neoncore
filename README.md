@@ -17,6 +17,7 @@
 
 - [Installation](#installation)
 - [Usage](#usage)
+- [Roadmap](#roadmap)
 
 ## Installation
 
@@ -48,7 +49,7 @@ To install **NeonCore**, simply clone the repository and build it using CMake. Y
   ```bash
   make
   ```
-## Usage
+### Usage
   ```cpp
   #include "neoncore/vector_ops.h"
 
@@ -67,7 +68,12 @@ To install **NeonCore**, simply clone the repository and build it using CMake. Y
       return 0;
   }
   ```
-## Compile
+### Compile
     ```bash
     g++ -o main_program -L path/to/build -lneoncore
     ```
+<!-- ROADMAP -->
+## Roadmap
+
+- [] Add Changelog
+- [] Implement other vector operations
