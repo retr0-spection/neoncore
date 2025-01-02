@@ -6,12 +6,10 @@
 
 ![screenshot](benchmarks/benchmark_comparison.png)
 
-
 ## Features
 
 - **Optimized for ARM**: Uses ARM NEON SIMD instructions for improved performance on ARM-based processors.
 - **Minimal Overhead**: A lightweight and efficient library with a focus on performance, using ARM-specific optimizations for vector operations.
-
 
 ## Table of Contents
 
@@ -36,43 +34,54 @@ To install **NeonCore**, simply clone the repository and build it using CMake. Y
    git clone https://github.com/retr0-spection/neoncore.git
    cd neoncore
    ```
+
 2. Create a build directory:
-  ```bash
-  mkdir build
-  cd build
-  ```
+
+```bash
+mkdir build
+cd build
+```
+
 3. Configure the project using CMake:
-  ```bash
-  cmake ..
-  ```
-4.	Build the project:
-  ```bash
-  make
-  ```
+
+```bash
+cmake ..
+```
+
+4. Build the project:
+
+```bash
+make
+```
+
 ### Usage
-  ```cpp
-  #include "neoncore/vector_ops.h"
 
-  int main() {
-      float array1[] = {1.0f, 2.0f, 3.0f, 4.0f};
-      float array2[] = {5.0f, 6.0f, 7.0f, 8.0f};
-      float result[4];
+```cpp
+#include "neoncore/vector_ops.h"
 
-      NeonCore::add_float_arrays(array1, array2, result, 4);
+int main() {
+    float array1[] = {1.0f, 2.0f, 3.0f, 4.0f};
+    float array2[] = {5.0f, 6.0f, 7.0f, 8.0f};
+    float result[4];
 
-      // Output: [6.0, 8.0, 10.0, 12.0]
-      for (int i = 0; i < 4; i++) {
-          std::cout << result[i] << " ";
-      }
-      return 0;
-  }
-  ```
-  ### Compile
-  ```bash
-    g++ -o main_program -L path/to/build -lneoncore
-    ```
+    NeonCore::add_float_arrays(array1, array2, result, 4);
+
+    // Output: [6.0, 8.0, 10.0, 12.0]
+    for (int i = 0; i < 4; i++) {
+        std::cout << result[i] << " ";
+    }
+    return 0;
+}
+```
+
+### Compile
+
+```bash
+  g++ -o main_program -L path/to/build -lneoncore
+```
 
 <!-- ROADMAP -->
+
 ## Roadmap
 
 - [] Add Changelog
